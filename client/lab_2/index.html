@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div>
-      <header><h1>Seth's Labs For INST377</h1></header>
-      <div>
-        <div>
-          <h3>Album Names</h3>
+    <div class="wrapper">
+      <header class="header"><h1>Seth's Labs For INST377</h1></header>
+      <div class="container">
+        <div class="left_section box">
+          <h2>Album Names</h2>
+          <div class="box">
           <ol>
             <li>Kanye West - Graduation</li>
             <li>John Mayer - Continuum</li>
@@ -20,18 +21,23 @@
             <li>Chief Keef - Finally Rich</li>
           </ol>
         </div>
-        <div>
-          <h3>Image Carousel</h3>
+        </div>
+        <div class="right_section box">
+          <h2>Image Carousel</h2>
+        <div class="grid">
           <img src="images/mochi.gif" alt="mochi gif" />
           <img src="images/mochi.jpg" alt="mochi jpg" />
           <img src="images/mochi.png" alt="mochi png" />
           <img src="images/mochi.svg" alt="mochi svg" />
         </div>
-        Collection of four separate smiley face images. In order: gif, jpg, png,
+          <div class="box">
+            Collection of four separate smiley face images. In order: gif, jpg, png,
         svg
+        </div>
+        </div>
       </div>
     </div>
-    <footer>
+    <footer class="footer">
       <a
         href="http://github.com/snbeasley"
         target="_blank"
@@ -41,12 +47,3 @@
     </footer>
   </body>
 </html>
-
-Hook it up to CSS by including style.css in the <head> tag
-
-Then add CSS class names to your HTML to make it look like the lab pictures.
-For example: <div class="selector">
-
-You should not need to edit the CSS to do this, only the HTML.
-
-Don't forget to add an actual set of image descriptions to your image carousel.
