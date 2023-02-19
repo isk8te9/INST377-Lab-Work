@@ -1,5 +1,51 @@
-<!--
-    Replace this with your working code from Lab 2, and include:
-    - The styles in this folder's `style.css`
-    - The script in script.js, which should be included via a `<script src="script.js" >` call before your closing </body> tag 
--->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seth's Labs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"><h1>Seth's Labs For INST377</h1></header>
+      <div class="container">
+        <div class="left_section box">
+          <h2>Album Names</h2>
+          <div class="box">
+            <ol>
+              <li>Kanye West - Graduation</li>
+              <li>John Mayer - Continuum</li>
+              <li>Michael Jackson - Thriller</li>
+              <li>Dr. Dre - 2001</li>
+              <li>Chief Keef - Finally Rich</li>
+            </ol>
+          </div>
+        </div>
+        <div class="right_section box">
+          <h2>Image Carousel</h2>
+          <div class="carousel">
+              <button class="prev">prev</button> 
+              <div class="slides">
+                <div class="carousel_item visible"><img src="images/Llama1.jpg" alt="Llama 1 image" /></div>
+                <div class="carousel_item hidden"><img src="images/Llama2.jpg" alt="Llama 2 image" /></div>
+                <div class="carousel_item hidden"><img src="images/Llama3.jpg" alt="Llama 3 image" /></div>
+                <div class="carousel_item hidden"><img src="images/Llama4.jpg" alt="Llama 4 image" /></div>
+              </div>
+              <button class="next">next</button>
+          </div>
+          <div class="box">Collection of four different llamas</div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <a
+        href="http://github.com/snbeasley"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Github Account: snbeasley</a
+      >
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
