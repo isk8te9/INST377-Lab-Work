@@ -3,6 +3,7 @@
   by adding `<script src="script.js">` just before your closing `</body>` tag
 */
 
+
 function filterList(list, query) {
   return list.filter((item) => {
     const lowerCaseName = item.name.toLowerCase();
@@ -71,7 +72,7 @@ async function mainEvent() {
 
     // This changes the response from the GET into data we can use - an "object"
     const arrayFromJson = await results.json();
-    console.table(arrayFromJson); // this is called "dot notation"
+    console.table(arrayFromJson); 
     // arrayFromJson.data - we're accessing a key called 'data' on the returned object
     // it initially contains all 1,000 records from your request
     currentList = arrayFromJson;
