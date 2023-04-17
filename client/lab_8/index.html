@@ -5,7 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seth's Labs</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+
     <link rel="stylesheet" href="style.css" />
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+crossorigin=""></script>
+
   </head>
   <body>
     <div class="wrapper">
@@ -21,6 +32,7 @@
               class="main_form"
             >
               <button type="button" id="data_load">Load County Data</button>
+              <button type="button" id="data_clear">Clear County Data</button>
             <div>
               <label for="resto">Filter By Restaurant Name</label>
               <input type="text" id="resto" name="resto"/>
@@ -33,6 +45,7 @@
         </div>
         <div class="right_section box">
           <h3>Local Restaurant List</h3>
+          <div id="map"></div>
           <ol>
           <div class="box" id="restaurant_list">
             A list of local restaurants
