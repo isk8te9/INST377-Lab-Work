@@ -12,8 +12,8 @@ function injectHTML(list) {
   const target = document.querySelector('#restaurant_list');
   target.innerHTML = '';
   list.forEach((item) => {
-    const str = `<li>${item.name}</li>`;
-    target.innerHTML += str;
+    const str = `<li>${item.name}</li>`
+    target.innerHTML += str
   });
 }
 
@@ -104,6 +104,7 @@ async function mainEvent() {
 
     console.log(formProps);
     const newList = filterList(currentList, formProps.resto);
+    injectHTML(newList);
 
     console.log(newList);
   });
